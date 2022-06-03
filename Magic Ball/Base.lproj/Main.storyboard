@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-dh-B5q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ball_1" translatesAutoresizingMaskIntoConstraints="NO" id="sjf-L3-FY2" userLabel="Magic Ball Image">
+                                <rect key="frame" x="0.0" y="60" width="414" height="806"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ну что у Тебя там?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVh-oG-hQ1">
+                                <rect key="frame" x="32" y="59" width="351.5" height="66"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.19611150029999999" green="0.16632390020000001" blue="0.75521332029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00S-30-FiL">
+                                <rect key="frame" x="0.0" y="756" width="414" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhI-OA-FOQ">
+                                        <rect key="frame" x="43.5" y="52" width="326.5" height="43"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="НАЖМИ И УЗНАЕШЬ МОЙ СОВЕТ" cornerStyle="fixed">
+                                            <fontDescription key="titleFontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHh-eJ-XDR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XhI-OA-FOQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="00S-30-FiL" secondAttribute="leading" constant="20" symbolic="YES" id="3XH-S1-TTJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="XhI-OA-FOQ" secondAttribute="bottom" constant="45" id="G9u-wh-rEv"/>
+                                    <constraint firstAttribute="trailing" secondItem="XhI-OA-FOQ" secondAttribute="trailing" constant="44" id="JYq-Pb-Fa9"/>
+                                    <constraint firstAttribute="height" constant="140" id="MDD-q0-C0H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="00S-30-FiL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ibe-52-od3"/>
+                            <constraint firstAttribute="trailing" secondItem="YVc-dh-B5q" secondAttribute="trailing" id="Kef-vX-ca7"/>
+                            <constraint firstItem="YVc-dh-B5q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mtb-Tg-U4H"/>
+                            <constraint firstItem="YVc-dh-B5q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PpV-tC-mtP"/>
+                            <constraint firstItem="sjf-L3-FY2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="VVx-Um-ZwM"/>
+                            <constraint firstAttribute="trailing" secondItem="sjf-L3-FY2" secondAttribute="trailing" id="WfP-57-d5H"/>
+                            <constraint firstItem="lVh-oG-hQ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="g5C-Zw-wI5"/>
+                            <constraint firstAttribute="trailing" secondItem="00S-30-FiL" secondAttribute="trailing" id="hiz-w8-H8W"/>
+                            <constraint firstAttribute="bottom" secondItem="YVc-dh-B5q" secondAttribute="bottom" id="j7R-Oq-vbA"/>
+                            <constraint firstItem="lVh-oG-hQ1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="l1f-GM-Zee"/>
+                            <constraint firstAttribute="bottom" secondItem="00S-30-FiL" secondAttribute="bottom" id="lHz-ls-5r8"/>
+                            <constraint firstItem="sjf-L3-FY2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ufB-2d-jM3"/>
+                            <constraint firstAttribute="bottom" secondItem="sjf-L3-FY2" secondAttribute="bottom" constant="30" id="vLZ-ZO-Tas"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lVh-oG-hQ1" secondAttribute="trailing" symbolic="YES" id="zkP-UC-R3r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ballImage" destination="sjf-L3-FY2" id="bed-zl-1kk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="444" height="283"/>
+        <image name="Ball_1" width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
