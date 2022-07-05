@@ -34,11 +34,14 @@
                                 <rect key="frame" x="0.0" y="756" width="414" height="140"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhI-OA-FOQ">
-                                        <rect key="frame" x="43.5" y="52" width="326.5" height="43"/>
+                                        <rect key="frame" x="57" y="48" width="300" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="KPf-nl-q0H"/>
+                                        </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="НАЖМИ И УЗНАЕШЬ МОЙ СОВЕТ" cornerStyle="fixed">
+                                        <buttonConfiguration key="configuration" style="gray" title="НАЖМИ ИЛИ ТРЯХНИ" cornerStyle="fixed">
                                             <fontDescription key="titleFontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -47,10 +50,11 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="XhI-OA-FOQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="00S-30-FiL" secondAttribute="leading" constant="20" symbolic="YES" id="3XH-S1-TTJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="XhI-OA-FOQ" secondAttribute="bottom" constant="45" id="G9u-wh-rEv"/>
-                                    <constraint firstAttribute="trailing" secondItem="XhI-OA-FOQ" secondAttribute="trailing" constant="44" id="JYq-Pb-Fa9"/>
+                                    <constraint firstItem="XhI-OA-FOQ" firstAttribute="centerY" secondItem="00S-30-FiL" secondAttribute="centerY" id="2sW-NB-Uj4"/>
+                                    <constraint firstAttribute="bottom" secondItem="XhI-OA-FOQ" secondAttribute="bottom" constant="48" id="G9u-wh-rEv"/>
                                     <constraint firstAttribute="height" constant="140" id="MDD-q0-C0H"/>
+                                    <constraint firstAttribute="trailing" secondItem="XhI-OA-FOQ" secondAttribute="trailing" constant="57" id="jGH-Rz-1id"/>
+                                    <constraint firstItem="XhI-OA-FOQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="00S-30-FiL" secondAttribute="leading" constant="20" symbolic="YES" id="lq6-IO-gWY"/>
                                 </constraints>
                             </view>
                         </subviews>

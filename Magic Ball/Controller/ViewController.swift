@@ -9,6 +9,9 @@ import UIKit
 
 let arrayOfBalls = [#imageLiteral(resourceName: "Ball_2"), #imageLiteral(resourceName: "Ball_3"), #imageLiteral(resourceName: "Ball_4"), #imageLiteral(resourceName: "Ball_5"), #imageLiteral(resourceName: "Ball_6"), #imageLiteral(resourceName: "Ball_7")]
 
+var animationManager = AnimationManager()
+var soundManager = SoundManager()
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var ballImage: UIImageView!
@@ -21,6 +24,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: UIButton) {
+        animationManager.animation(ballImage: ballImage)
+        soundManager.playSound()
         ballImage.image = arrayOfBalls.randomElement()
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            animationManager.animation(ballImage: ballImage)
+            soundManager.playSound()
+            ballImage.image = arrayOfBalls.randomElement()
+        }
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7018DA7D28743F8100A8E51B /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7018DA7C28743F8100A8E51B /* AnimationManager.swift */; };
+		7018DA7F2874457F00A8E51B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7018DA7E2874457F00A8E51B /* SoundManager.swift */; };
+		7018DA82287447FC00A8E51B /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7018DA81287447FC00A8E51B /* sound.mp3 */; };
 		70B8F7C2284955FE0095F485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8F7C1284955FE0095F485 /* AppDelegate.swift */; };
 		70B8F7C4284955FE0095F485 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8F7C3284955FE0095F485 /* SceneDelegate.swift */; };
 		70B8F7C6284955FE0095F485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8F7C5284955FE0095F485 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7018DA7C28743F8100A8E51B /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		7018DA7E2874457F00A8E51B /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		7018DA81287447FC00A8E51B /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		70B8F7BE284955FE0095F485 /* Magic Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B8F7C1284955FE0095F485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70B8F7C3284955FE0095F485 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7018DA7928743F3D00A8E51B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70B8F7C7284955FE0095F485 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7018DA7A28743F4800A8E51B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70B8F7C5284955FE0095F485 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7018DA7B28743F5100A8E51B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7018DA7C28743F8100A8E51B /* AnimationManager.swift */,
+				7018DA7E2874457F00A8E51B /* SoundManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7018DA80287447FC00A8E51B /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				7018DA81287447FC00A8E51B /* sound.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		70B8F7B5284955FE0095F485 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +97,13 @@
 			children = (
 				70B8F7C1284955FE0095F485 /* AppDelegate.swift */,
 				70B8F7C3284955FE0095F485 /* SceneDelegate.swift */,
-				70B8F7C5284955FE0095F485 /* ViewController.swift */,
-				70B8F7C7284955FE0095F485 /* Main.storyboard */,
+				7018DA7B28743F5100A8E51B /* Model */,
+				7018DA7928743F3D00A8E51B /* View */,
+				7018DA7A28743F4800A8E51B /* Controller */,
 				70B8F7CA284956010095F485 /* Assets.xcassets */,
 				70B8F7CC284956010095F485 /* LaunchScreen.storyboard */,
 				70B8F7CF284956010095F485 /* Info.plist */,
+				7018DA80287447FC00A8E51B /* Sound */,
 			);
 			path = "Magic Ball";
 			sourceTree = "<group>";
@@ -125,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7018DA82287447FC00A8E51B /* sound.mp3 in Resources */,
 				70B8F7CE284956010095F485 /* LaunchScreen.storyboard in Resources */,
 				70B8F7CB284956010095F485 /* Assets.xcassets in Resources */,
 				70B8F7C9284955FE0095F485 /* Main.storyboard in Resources */,
@@ -138,9 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7018DA7D28743F8100A8E51B /* AnimationManager.swift in Sources */,
 				70B8F7C6284955FE0095F485 /* ViewController.swift in Sources */,
 				70B8F7C2284955FE0095F485 /* AppDelegate.swift in Sources */,
 				70B8F7C4284955FE0095F485 /* SceneDelegate.swift in Sources */,
+				7018DA7F2874457F00A8E51B /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
